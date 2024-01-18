@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <title>FEEDBACK</title>
+  <link rel="shortcut icon" href="images/icon.ico" type="image/x-icon">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link href="css/styles.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/fullpage.css" />
+
+<script src="js/script.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script type="text/javascript" src="js/fullpage.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
+</head>
+
+<body>
+  <script>
+  window.onload = function () {
+    document.body.classList.add('loaded_hiding');
+    window.setTimeout(function () {
+      document.body.classList.add('loaded');
+      document.body.classList.remove('loaded_hiding');
+    }, 500);
+  }
+</script>
+  <div class="preloader">
+  <div class="preloader__row">
+    <div class="preloader__item"></div>
+    <div class="preloader__item"></div>
+  </div>
+</div>
+  <div class="container-fluid bgFeedback " style="height:100vh">
+     <div class="container bgFeedback ">
+       <div class="row " style="padding-top:30px">
+         <div class="col-6 d-flex justify-content-center  testTable">
+           Input Resourses
+         </div>
+         <div class="col-6 d-flex justify-content-center testTable">
+           Output Resourses
+
+         </div>
+       </div>
+
+       <div class="row" style="padding-top:15px">
+         <div class="col-6 d-flex justify-content-center testTable">
+           <input type="number" name="inRes" value="" id="inBttn">
+         </div>
+         <div class="col-6 d-flex justify-content-center testTable">
+           <input type="number" name="outRes" value="" id="outBttn">
+         </div>
+       </div>
+
+       <div class="row" style="padding-top:30px;padding-bottom:30px;">
+         <div class="col-4">
+
+         </div>
+         <div class="col-4 d-flex justify-content-center">
+           <input class="inputButtonStyle" type="submit" value="Lets GO!" onclick="calculate()"/>
+
+         </div>
+       </div>
+
+       <div class="row d-flex justify-content-center" style="padding-top:10px" >
+       <div class="col-3 d-flex justify-content-center testTable" id="col1">
+
+       </div>
+       <div class="col-3 d-flex justify-content-center testTable" id="col2">
+
+       </div>
+       <div class="col-3 d-flex justify-content-center testTable" id="col3">
+
+       </div>
+       </div>
+       <div class="row d-flex justify-content-center" style="padding-top:10px">
+       <div class="col-3 d-flex justify-content-center testTable" id="col4">
+
+       </div>
+       <div class="col-3 d-flex justify-content-center testTable" id="col5">
+
+       </div>
+       <div class="col-3 d-flex justify-content-center testTable" id="col6">
+
+       </div>
+       </div>
+       <div class="row d-flex justify-content-center" style="padding-top:10px">
+       <div class="col-3 d-flex justify-content-center testTable" id="col7">
+
+       </div>
+       <div class="col-3 d-flex justify-content-center testTable" id="col8">
+
+       </div>
+       <div class="col-3 d-flex justify-content-center testTable" id="col9">
+
+       </div>
+       </div>
+       <div class="row d-flex justify-content-center" style="padding-top:10px">
+         <div class="d-flex justify-content-center testTable" id="colcount1">
+
+         </div>
+       </div>
+
+       <div class="row d-flex justify-content-center" style="padding-top:10px" >
+       <div class="col-3 d-flex justify-content-center testTable" id="col10">
+
+       </div>
+       <div class="col-3 d-flex justify-content-center testTable" id="col11">
+
+       </div>
+       <div class="col-3 d-flex justify-content-center testTable" id="col12">
+
+       </div>
+       </div>
+       <div class="row d-flex justify-content-center" style="padding-top:10px">
+       <div class="col-3 d-flex justify-content-center testTable" id="col13">
+
+       </div>
+       <div class="col-3 d-flex justify-content-center testTable" id="col14">
+
+       </div>
+       <div class="col-3 d-flex justify-content-center testTable" id="col15">
+
+       </div>
+       </div>
+       <div class="row d-flex justify-content-center" style="padding-top:10px">
+       <div class="col-3 d-flex justify-content-center testTable" id="col16">
+
+       </div>
+       <div class="col-3 d-flex justify-content-center testTable" id="col17">
+
+       </div>
+       <div class="col-3 d-flex justify-content-center testTable" id="col18">
+
+       </div>
+       </div>
+       <div class="row d-flex justify-content-center" style="padding-top:10px">
+         <div class="d-flex justify-content-center testTable" id="colcount2">
+
+         </div>
+       </div>
+
+
+
+
+     </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,748 @@
+
+@font-face {
+  font-family: 'Umbrella';
+  src: url('../fonts/Umbrella.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Hyperspace';
+  src: url('../fonts/Hyperspace.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Teko';
+  src: url('../fonts/Teko.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Chanel';
+  src: url('../fonts/Chanel.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.header
+
+*::selection {
+  background-color: none;
+  color: white;
+}
+
+.scrollHidden::-webkit-scrollbar {
+  width: 0;
+}
+
+.scrollIs::-webkit-scrollbar {
+  width: 12px;
+}
+
+html {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  background-color: black;
+  color: white;
+}
+
+
+a {
+  text-decoration: inherit !important;
+
+}
+
+a:hover {
+  text-decoration: inherit !important;
+
+
+}
+
+a:active {
+  text-decoration: inherit !important;
+
+}
+
+a:visited {
+  color: inherit !important;
+
+}
+
+.preloader {
+  /*фиксированное позиционирование*/
+  position: fixed;
+  /* координаты положения */
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  /* фоновый цвет элемента */
+  background: #0E0C0F;
+  /* размещаем блок над всеми элементами на странице (это значение должно быть больше, чем у любого другого позиционированного элемента на странице) */
+  z-index: 1001;
+}
+
+.preloader__row {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  width: 70px;
+  height: 70px;
+  margin-top: -35px;
+  margin-left: -35px;
+  text-align: center;
+  animation: preloader-rotate 2s infinite linear;
+}
+
+.preloader__item {
+  position: absolute;
+  display: inline-block;
+  top: 0;
+  background-color: white;
+  border-radius: 100%;
+  width: 35px;
+  height: 35px;
+  animation: preloader-bounce 2s infinite ease-in-out;
+}
+
+.preloader__item:last-child {
+  top: auto;
+  bottom: 0;
+  animation-delay: -1s;
+}
+
+@keyframes preloader-rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes preloader-bounce {
+
+  0%,
+  100% {
+    transform: scale(0);
+  }
+
+  50% {
+    transform: scale(1);
+  }
+}
+
+.loaded_hiding .preloader {
+  transition: 0.5s opacity;
+  opacity: 0;
+}
+
+.loaded .preloader {
+  display: none;
+}
+
+.bgSection0 {
+  background-color: #0E0C0F;
+}
+
+.bgSection1 {
+  background-color: #F3F3F3;
+}
+
+.bgSection2 {
+  background-color: #0E0C0F;
+}
+
+.bgSection3 {
+  background-color: #F3F3F3;
+}
+
+.bgContainer3 {
+  background-color: #F3F3F3;
+  background-image: url(../images/Reptile.png);
+  background-repeat: no-repeat;
+  background-size: 100vw 100vh;
+  height: 100vh;
+  width: 100vw;
+}
+
+.textFontMain {
+  font-family: Hyperspace;
+  text-align: center;
+  color: #f8f8f2;
+  font-size: 8vh;
+}
+
+.textFontHeaderLanding {
+  font-family: Teko;
+  text-align: center;
+  color: #121212;
+  font-size: 7vh;
+}
+
+.textFontInfoLanding {
+  font-family: Chanel;
+  text-align: center;
+  color: #121212;
+  font-size: 3vh;
+}
+
+.textFontHeaderLandingWhite {
+  font-family: Teko;
+  text-align: center;
+  color: #f8f8f2;
+  font-size: 6vh;
+}
+
+.textFontInfoLandingWhite {
+  font-family: Chanel;
+  text-align: center;
+  color: #f8f8f2;
+  font-size: 3vh;
+}
+
+.MainLogo {
+  margin-top: 7vh;
+  height: 35vh;
+}
+
+.MouseGIF {
+  animation: MouseOpacity 2s ease-in;
+  animation-fill-mode: forwards;
+  animation-delay: 1.3s;
+  opacity: 0;
+  margin-top: 20vh;
+  height: 14vh;
+}
+
+.pe4enkaImage {
+  height: 100vh;
+}
+
+.secondPageRow1 {
+  height: 25vh;
+}
+
+.secondPageRow2 {
+  height: 75vh;
+}
+
+.secondPageCol1 {
+  margin-top: 20vh;
+}
+
+.thirdPageRow1 {
+  height: 25vh;
+}
+
+.thirdPageRow2 {
+  height: 75vh;
+}
+
+.thirdPageCol1 {
+  margin-top: 20vh;
+}
+
+.landingButton {
+  padding-top: 8px;
+  padding-left: 34px;
+  padding-right: 34px;
+  color: #121212;
+  background-color: #f8f8f2;
+  border-radius: 35px;
+  transition: 0.5s;
+  text-decoration: none;
+}
+
+.landingButton:hover {
+  transform: scale(1.05);
+  transition: 0.5s;
+  box-shadow: 0 0 20px #f8f8f2;
+  text-decoration: none;
+}
+
+.landingButton:active {
+  background-color: #B899BF;
+  color: #f8f8f2;
+  box-shadow: 0 0 20px #B899BF;
+  text-decoration: none;
+}
+
+.bgSelection {
+  background-color: #121212;
+  height: 100vh;
+}
+
+.bgFeedback {
+  background-color: #121212;
+
+}
+
+.littleSections {
+  height: 100%;
+  color: black;
+  margin-top: 3vh;
+}
+
+.ls1 {
+  height: 100%;
+  background-image: url(../images/note.png);
+  background-repeat: no-repeat;
+  background-size: 130%;
+  opacity: 0.7;
+  filter: blur(0);
+  transition: 0.5s;
+}
+
+.lst1 {
+  z-index: 1;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  transition: 0.5s;
+  text-shadow: 0 0 15px black, 0 0 15px black;
+}
+
+.lst2 {
+  z-index: 1;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  transition: 0.5s;
+  text-shadow: 0 0 15px black, 0 0 15px black;
+}
+
+.lst3 {
+  z-index: 1;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  transition: 0.5s;
+  text-shadow: 0 0 15px black, 0 0 15px black;
+}
+
+.lst4 {
+  z-index: 1;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  transition: 0.5s;
+  text-shadow: 0 0 15px black, 0 0 15px black;
+}
+
+.littleSections:hover .ls1 {
+  filter: blur(3px);
+  background-size: 140%;
+  transition: 0.5s;
+}
+
+.littleSections:hover .lst1 {
+  transform: scale(1.3);
+  transition: 0.5s;
+}
+
+.littleSections:hover .ls2 {
+  filter: blur(3px);
+  background-size: 110%;
+  transition: 0.5s;
+}
+
+.littleSections:hover .lst2 {
+  transform: scale(1.3);
+  transition: 0.5s;
+}
+
+.littleSections:hover .ls3 {
+  filter: blur(3px);
+  background-size: 110%;
+  transition: 0.5s;
+}
+
+.littleSections:hover .lst3 {
+  transform: scale(1.3);
+  transition: 0.5s;
+}
+
+.littleSections:hover .ls4 {
+  filter: blur(3px);
+  background-size: 125%;
+  transition: 0.5s;
+}
+
+.littleSections:hover .lst4 {
+  transform: scale(1.3);
+  transition: 0.5s;
+}
+
+.ls2 {
+  height: 100%;
+  background-image: url(../images/phone.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  opacity: 0.7;
+  filter: blur(0);
+  transition: 0.5s;
+}
+
+.ls3 {
+  height: 100%;
+  background-image: url(../images/construction.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  opacity: 0.7;
+  filter: blur(0);
+  transition: 0.5s;
+}
+
+.ls4 {
+  height: 100%;
+  background-image: url(../images/construction.jpg);
+  background-repeat: no-repeat;
+  opacity: 0.7;
+    background-size: 100%;
+  filter: blur(0);
+  transition: 0.5s;
+}
+
+.sideMenu {
+  background-color: #2E2B28;
+  height: 92vh;
+}
+
+.backButtonOnMenu {
+  height: 5vh;
+  background-color: #FF7272;
+  font-family: Teko;
+  font-size: 25px;
+  text-align: center;
+  text-decoration: none;
+  color: #712F2F;
+}
+
+.backButtonOnMenu2 {
+  height: 5vh;
+  margin-top:3vh;
+  border-radius:7px;
+  background-color: #FF7272;
+  font-family: Teko;
+  font-size: 4vh;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  margin-bottom: 20px;
+  transition: 0.3s;
+}
+
+.backButtonOnMenu2:hover {
+  transition: 0.6s;
+  transform: scale(1.3);
+  box-shadow: 0px 0px 15px #FF7272;
+}
+
+
+.SCPMenuHeader {
+  font-family: Hyperspace;
+  font-size: 2vw;
+  text-align: center;
+}
+
+.SCPMenuPoints {
+  font-family: Chanel;
+  font-size: 18px;
+  text-align: left;
+  color: white;
+  transition: 0.5s;
+  text-decoration: none;
+  word-wrap: break-word;
+   !important width: 100%;
+   !important
+}
+
+
+:focus {
+  outline-style: none;
+  outline-width: 0px !important;
+  outline-color: none !important;
+}
+
+
+.CatalogueHeader {
+  font-family: Teko;
+  font-size: 5vw;
+  margin-top: 5vh;
+  text-align: left;
+}
+
+.CatalogueFastInfo {
+  font-family: Chanel;
+  font-size: 22px;
+  text-align: left;
+}
+
+.MainTextStyleCatalogue {
+  font-family: Chanel;
+  font-size: 15px;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+
+.btnLink {
+  transition: 0.5s;
+}
+
+.btnLink:hover {
+  color: white;
+  transition: 0.5s;
+}
+
+.SCPImage {
+  height: 35vh;
+  box-shadow: 0 0 20px white;
+  border-radius: 25px;
+}
+
+.MainTextContainer {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  height: 50vh;
+  margin-left: 3vw;
+  width: 100%;
+  border-bottom: none;
+}
+
+.MainTextTitle {
+  font-family: Chanel;
+  font-size: 45px;
+  text-align: left;
+  width: 50%;
+}
+
+.MainTextTitleFigure {
+  background-color: #3a3633;
+  height: 100%;
+  width: 30px;
+  margin-left: 3.5vw;
+}
+
+.SecondaryTextTitle {
+  font-family: teko;
+  font-size: 50px;
+  text-align: center;
+}
+
+.firstLevel {
+  color: #61ffbb
+}
+
+.secondLevel {
+  color: #72da7f
+}
+
+.thirdLevel {
+  color: #e2e788
+}
+
+.fourthLevel {
+  color: #e7c188
+}
+
+.fifthLevel {
+  color: #ef7a57
+}
+
+.safe {
+  color: #84f0c1
+}
+
+.euclid {
+  color: #e1cd89
+}
+
+.keter {
+  color: #da778f
+}
+
+.thaumiel {
+  color: #aa53b2
+}
+
+.neutralized {
+  color: #949494
+}
+
+.overCrossed {
+  text-decoration: line-through;
+}
+
+.secretText {
+  transition: 0.5s;
+  color: white;
+  background-color: white;
+}
+
+.secretText:hover {
+  transition: 0.5s;
+  color: #e67f82;
+  background-color: #131313;
+}
+
+.linkToAnotherSCP {
+  font-weight: bold;
+  color: pink;
+  cursor: pointer;
+}
+
+.headImage {
+  background-image: url(../images/space.png);
+  height: 10vh;
+}
+
+.centerText {
+  text-align: center;
+}
+
+.specialHover {
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.specialHover:hover {
+  color: #da778f;
+  transition: 0.5s;
+}
+
+.form {
+  width: 50vw;
+}
+
+.formInputs {
+width:30vw;
+height:5vh;
+margin-bottom: 1vh;
+}
+
+.formTextArea {
+width:50vw;
+margin-bottom: 1vh;
+}
+
+.titleOfClasses {
+  background-color: #FF7272;
+  color:#131313;
+  font-family: Umbrella;
+  font-size: 60px;
+  margin-bottom: 3vh;
+}
+
+.closebutton {
+  background-color: #FF7272;
+  color:white;
+  font-family: Chanel;
+  font-size: 3vh;
+  margin-top: 2vh;
+}
+
+.testTable {
+ font-size: 20px;
+ font-family: Chanel;
+ justify-content: center;
+
+}
+
+.testBorder {
+border: solid 2px red;
+}
+
+.inputButtonStyle {
+  height: 50px;
+  width: 120px;
+  font-size: 35px;
+  font-family: Teko;
+  justify-content: center;
+  background-color: white;
+
+}
+
+.TextStyleButtonsMain {
+  font-family: Chanel;
+  font-size: 2vh;
+  margin: 1vh;
+  text-align: center;
+  background-color: #70A9A1;
+  border-radius: 20px;
+  padding: 2vh;
+  transition: 0.5s;
+}
+
+.TextStyleButtonsMain:hover {
+  transition: 0.5s;
+  transform: scale(1.05);
+  text-align: center !important;
+  background-color: #40798C;
+  box-shadow: 0px 0px 25px #70A9A1;
+}
+
+.fix {
+    margin: 1vh;
+    padding: 2vh;
+
+}
+
+.rowsMain {
+  padding-bottom: 2vh;
+}
+
+.tableRows {
+  width: 100%;
+}
+
+@keyframes MouseOpacity {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+@media (max-width: 1600px) {
+  .SCPImage {
+    height: 37vh;
+  }
+}
+
+@media (min-width: 1920px) {
+  .SCPImage {
+    height: 35vh;
+  }
+}
+
+.secondslidedisplaytrue {
+  display:none;
+}
+
+@media (min-width: 0) and (max-width:1266px) {
+.secondslidedisplaynone {
+  display: none;
+}
+.secondslidedisplaytrue {
+  display:block;
+}
+}
+
+@media (min-width: 0) and (max-width:576px) {}
+
+@media (min-width: 577px) and (max-width:768px) {}
+
+@media (min-width: 768px) and (max-width:992px) {}
+
+@media (min-width: 992px) and (max-width:1200px) {}
