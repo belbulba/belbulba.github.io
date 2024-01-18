@@ -497,3 +497,16 @@ function calculate() {
       }
 
 }
+
+function toggleDisplay() {
+            var firstWeek = document.getElementById('firstweek');
+            var secondWeek = document.getElementById('secondweek');
+
+            if (firstWeek.style.display === 'flex') {
+                firstWeek.style.display = 'none';
+                secondWeek.style.display = 'flex';
+            } else {
+                firstWeek.style.display = 'flex';
+                secondWeek.style.display = 'none';
+            }
+        }

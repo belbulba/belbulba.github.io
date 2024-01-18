@@ -27,6 +27,14 @@
   font-style: normal;
 }
 
+#firstweek {
+            display: flex;
+        }
+
+        #secondweek {
+            display: none;
+        }
+
 .header
 
 *::selection {
@@ -76,6 +84,41 @@ a:active {
 a:visited {
   color: inherit !important;
 
+}
+.switchButton1 {
+  background-color:#987159;
+  font-family:Teko;
+  border-radius:10px;
+  margin-bottom:20px;
+  transition:0.5s;
+}
+
+.switchButton1:active {
+  transform: scale(1.2);
+  transition:0.5s;
+}
+
+.switchButton1:hover {
+  transform: scale(1.2);
+  transition:0.5s;
+}
+
+.switchButton2 {
+  background-color:#7B967F;
+  font-family:Teko;
+  border-radius:10px;
+  margin-bottom:20px;
+  transition:0.5s;
+}
+
+.switchButton2:active {
+  transform: scale(1.2);
+  transition:0.5s;
+}
+
+.switchButton2:hover {
+  transform: scale(1.2);
+  transition:0.5s;
 }
 
 .preloader {
@@ -757,16 +800,31 @@ border: solid 2px red;
   }
 }
 
-@media (max-width: 1600px) {
-  .SCPImage {
-    height: 37vh;
-  }
+.showWidth {
+  display: none;
+  overflow-y: scroll;
+  scrollbar-width:none;
+
+}
+@media (max-width: 1200px) {
+
+  .hideWidth {
+    display:none !important;
+
+}
+.showWidth {
+  display: block;
+  overflow-y: scroll;
+  scrollbar-width:none;
+}
 }
 
 @media (min-width: 1920px) {
   .SCPImage {
     height: 35vh;
+
   }
+
 }
 
 .secondslidedisplaytrue {
@@ -779,6 +837,10 @@ border: solid 2px red;
 }
 .secondslidedisplaytrue {
   display:block;
+
+.hideWidth {
+  display:none !important;
+}
 }
 }
 
