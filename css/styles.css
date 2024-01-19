@@ -34,6 +34,46 @@
   display: none;
 }
 
+.NameOfWeekUnits {
+  padding-top:30px !important;
+
+  border-radius:;
+  color:white !important;
+  font-size:2.5vh;
+  margin:0;
+}
+
+.NameOfWeekUnitsRadius {
+    border-radius:14px 14px 0 0;
+}
+
+.LastUnitRadius {
+  border-radius:0 0 14px 14px;
+}
+
+.UnitMonday {
+  background-color:#1E1E1E;
+}
+
+.UnitTuesday {
+  background-color:#1E1E1E;
+}
+
+.UnitWednesday {
+  background-color:#1E1E1E;
+}
+
+.UnitThursday {
+  background-color:#1E1E1E;
+}
+
+.UnitFriday{
+  background-color:#1E1E1E;
+}
+
+.UnitSaturday {
+    background-color:#1E1E1E;
+}
 .header *::selection {
   background-color: none;
   color: white;
@@ -183,7 +223,8 @@ a:visited {
 }
 
 .tableUnit {
-  border: 1px solid white;
+  border: 1px solid #2F2F2F;
+  opacity:95%;
 }
 
 .tableUnitHeaders {
