@@ -42,6 +42,15 @@
   font-size:2.5vh;
   margin:0;
 }
+.backgroundFirstWeek {
+  background-color:#4B6E69;
+  align-text:center;
+}
+
+.backgroundSecondWeek {
+  background-color:#382B3B;
+  align-text:center;
+}
 
 .NameOfWeekUnitsRadius {
     border-radius:14px 14px 0 0;
@@ -60,6 +69,10 @@
 }
 
 .UnitWednesday {
+  background-color:#1E1E1E;
+}
+
+.UnitNoneDay {
   background-color:#1E1E1E;
 }
 
