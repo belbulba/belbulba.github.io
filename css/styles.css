@@ -34,6 +34,23 @@
   display: none;
 }
 
+.lection {
+  color:#B6D094 !important;
+}
+
+.practic {
+  color:#E1AA7D !important;
+}
+.lab {
+  color:#A1CDF1 !important;
+}
+.consult {
+  color:#8AA1B9 !important;
+}
+
+.bold {
+  font-weight:bold;
+}
 .NameOfWeekUnits {
   padding-top:30px !important;
 
