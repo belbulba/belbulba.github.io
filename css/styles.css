@@ -26,12 +26,27 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Srbija';
+  src: url('../fonts/Srbija Sans.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
 #firstweek {
   display: flex;
 }
 
 #secondweek {
   display: none;
+}
+
+.lessonTitle {
+  font-size:14px;
+  font-family:Srbija;
+  color:white;
 }
 
 .lection {
@@ -75,6 +90,7 @@
 
 .LastUnitRadius {
   border-radius:0 0 14px 14px;
+  overflow:hidden;
 }
 
 .UnitMonday {
@@ -263,6 +279,7 @@ a:visited {
 
 .bgSection0 {
   /*background-color: #0E0C0F;*/
+  background-image: url("../images/forest.png");
   background-color:#0E0C0F;
 }
 
